@@ -1,0 +1,33 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -d",
+    "format": "prettier --write .",
+    "lint": "eslint --cache --fix --ext .ts .",
+    "test": "",
+    "start": "ts-node --transpile-only src/server"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "apollo-server-express": "2.19.2",
+    "graphql": "15.5.0",
+    "graphql-tag": "2.11.0",
+    "tsconfig-paths": "3.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "@types/node": "12.19.15",
+    "@typescript-eslint/eslint-plugin": "4.14.1",
+    "@typescript-eslint/parser": "4.14.1",
+    "eslint": "7.18.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "prettier": "2.2.1",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.3"
+  }
+}
